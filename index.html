@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <audio id="bgmusic" loop>
+    <source src="./music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- Background -->
+    <div id="particles"></div>
+    <div id="confetti"></div>
+
+    <!-- ================= INTRO ================= -->
+
+    <section id="intro" class="screen active">
+
+        <div class="intro-content">
+
+            <div class="sparkle">✦</div>
+
+            <p class="small-title">
+                A LITTLE SURPRISE
+            </p>
+
+            <h1>
+                Something Special
+            </h1>
+
+            <p class="intro-text">
+                I've prepared something just for you...
+            </p>
+
+            <button id="startBtn" class="main-btn">
+                Begin the Surprise
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+
+    <section id="birthday" class="screen">
+
+        <div class="birthday-content">
+
+            <p class="small-title">
+                TODAY IS YOUR SPECIAL DAY
+            </p>
+
+            <div id="lineText"></div>
+
+            <button id="continueBtn" class="main-btn continue-btn">
+                Continue
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIFT ================= -->
+
+    <section id="gift" class="screen">
+
+        <div class="gift-content">
+
+            <p class="small-title">
+                ONE MORE SURPRISE
+            </p>
+
+            <h2>
+                There's something waiting for you
+            </h2>
+
+            <p class="gift-description">
+                Open it when you're ready...
+            </p>
+
+            <div id="giftBox" class="gift-box">
+
+            <div class="gift-lid">
+            <div class="gift-ribbon-horizontal"></div>
+            <div class="gift-bow">
+            <span></span>
+            <span></span>
+            </div>
+            </div>
+
+          <div class="gift-body">
+          <div class="gift-ribbon-vertical"></div>
+          </div>
+
+          <div class="gift-sparkle">✨</div>
+
+             </div>
+
+           <p class="click-text">
+             TAP THE GIFT 🎁
+             ]</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+
+    <section id="final" class="screen">
+
+        <div class="final-content">
+
+    <div class="birthday-cake">
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="cake-top"></div>
+
+        <div class="cake-middle"></div>
+
+        <div class="cake-bottom"></div>
+
+       </div>
+
+      <div class="celebration-symbol">
+        ✨
+     </div>
+
+     <p class="final-small">
+        TODAY IS ALL ABOUT YOU
+     </p>
+
+     <h1 class="final-title">
+        Happy Birthday
+     </h1>
+
+     <h2 class="final-name">
+        Chathurika
+     </h2>
+
+     <div class="final-divider"></div>
+
+     <div id="finalLines" class="final-lines"></div>
+
+     <p class="final-special">
+        Made specially for you ✨
+     </p>
+
+     <button id="secretBtn" class="secret-btn">
+        💌 Open Your Special Message
+     </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= MESSAGE POPUP ================= -->
+
+    <div id="messageOverlay" class="message-overlay">
+
+        <div class="message-card">
+
+            <button id="closeMessage" class="close-message">
+                ×
+            </button>
+
+            <div class="message-icon">
+                ✨
+            </div>
+
+            <p class="message-label">
+                A MESSAGE JUST FOR YOU
+            </p>
+
+            <h3>
+                 Chathurika
+            </h3>
+
+            <p id="typedMessage" class="typed-message"></p>
+
+            <p class="message-signature">
+                With lots of happiness ✨
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
